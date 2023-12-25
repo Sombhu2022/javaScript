@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>new</title>
+</head>
+<body>
+	<script>
+		var x="sombhu",y=["sombhu","rinki","koushik"],z= {som :"sombhu",rin:"rinki"};
+		document.write(x);
+		document.write("<br>");
+		document.write(typeof x);
+		document.write(y);
+		document.write("<br>");
+		document.write(typeof y);
+        document.write(z);
+		document.write("<br>");
+		document.write(typeof z);
+		
+	</script>
+	<hr>
+
+	<script>
+		document.write("globle variable");
+		var _v=100;//globle veriable..
+
+		document.write(_v);
+
+		function a(){
+			
+			document.write("hii frinds this is functions");
+			var x=90;//local veriable
+			document.write(x);
+
+			//alert("hii");
+			//alert(window._v);
+
+		}
+		a();
+		
+	</script>
+	<hr>
+	<script>
+
+		document.write("user input process"+"<br>");
+		function prompt(){
+		var a= prompt("enter your name:");
+		document.write("your name is :  " + a);
+		}
+		
+		function input()
+		{
+			var i= document.getElementById("name");
+			document.write(i.value);
+		}
+		
+	</script>
+	
+	<input type="name" placeholder="enter your name" id="name">
+	<input type="submit" name="submit" value="submit" onclick="input()">
+	<hr>
+	<script>
+		var a=100;
+		var b="sombhu";
+		document.write( a);
+		document.write("this is if else block"+"<br>");
+		if(b=="sombhu")
+		{
+			document.write("right condition");
+		}
+		else{
+			document.write("wrrong condition ");
+		}
+	</script>
+	<hr>
+	<script>
+		/*document.write("switch block");
+		var c=A;
+		switch(c)
+		{ 
+			case'A':
+				var n=document.write("this is A case");
+				case 'B':
+				var n=document.write("this is B case");
+				case 'C':
+				var n=document.write("this is C case");
+				case 'D':
+				var n=document.write("this is D case");
+				case 'E':
+				var n=document.write("this is E case");
+				default:
+				var n=document.write("not match cases");
+
+
+		}
+		document.write(n);
+	</script>
+	<hr>
+	<script>
+		document.write("this is loop porttion");
+		var i=10
+		while (i>0) {
+			document.write(i);
+			i--;
+			
+		}
+		var j=10;
+		do {
+			document.write("<br>");
+			document.write(j);
+			j--;
+		}
+		while(j>0);
+		document.write("this is for loop"+"<br>");
+		for(var i=0; i<5; i++)
+		{
+			document.write(i);
+		}
+		var array={"sombhu","koushi","243","14346"};
+		array.forEach(function(value){
+			document.write(value+"<br>");
+			
+		});
+
+
+		
+	</script>
+	<script>
+		var arr={name:"sombhu das", roll:1050 ,email:"som@gmail.com"};
+				for(var i in arr)
+				{
+					document.write(arr[i]+"<br>");
+				}
+	</script>
+
+		
+</body>
+</html>
+
+

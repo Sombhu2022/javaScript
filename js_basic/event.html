@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event alert</title>
+        <script>
+            function click(){
+                alert("it is onclick ");
+            }
+            function cl(){
+                alert("it is click event");
+            }
+            function dblclick()
+            {
+                alert("it is double click event");
+            }
+             function right(){
+            alert("thet is right click event");
+            }
+            function mouse_hover(){
+                alert("this is mouse hover event");
+            }
+            function mouse_out()
+            {
+                alert("mouse out alert");
+            }
+            function mouse_up()
+            {
+                alert("this is mouse up alert");
+            }
+            function mouse_down(){
+                alert("mouse down alert");
+            }
+            function key(){
+                alert("this is key press event .. this event only run for body and form");
+            }
+            function key_up()
+            {
+                alert(" this is resize event event");
+            }
+            function load()
+            {
+                alert("this is  unload load event");
+            }
+           
+        </script>
+        
+    </head>
+    <body onload="load()">
+        <form onkeypress="key()">
+         <button onclick="cl()">onclick</button>
+         <p ondblclick="dblclick()">double click</p>
+         <p oncontextmenu="right()">right click</p>
+         <button onmouseenter="mouse_hover()">mouse hover</button>
+         <spen onmouseout="mouse_out()">mouse out</spen>
+         <h1 onmouseup="mouse_up()"> mouse up</h1>
+         <a onmousedown="mouse_down()">mouse down</a>
+         <p onkeypress="key()">press any key</p>
+         <p></p>
+
+</form>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var f=60;
+        var sr="sombhu";
+        document.writeln(sr);
+        var s=new String("     panskura   banamali  college ");
+        document.write(s + "..... length of the string --->"+s.length);
+        let st=s.charAt(5);
+        document.write("<hr>"+"return character at a specified index:"+st);
+
+        document.write("<hr>"+"unicode of the given index use charCodeAt()"+s.charCodeAt(9));
+
+        document.write("<hr>"+"join the multimle string"+s.concat(sr,+"  "+"das"));
+
+        document.write("<hr>"+"ending value matche :"+ s.endsWith("college "));
+
+        // this fun use to  get alphabate or number or speciel charector etc...65-90(A-Z), 97-122(a-z) , 48-58(0-9)
+        document.write("<hr>"+"print char using given unicode:"+String.fromCharCode(48));
+     
+        //this fun return the bool value , true or false ...
+        document.write("<hr>"+"includes the value in array, this is case sencetive:"+s.includes("pan"));
+
+        document.write("<hr>"+"create substring : "+s.substr(10,20));
+
+        document.write("<hr>"+"uper case: "+ s.toUpperCase());
+
+        document.write("<hr>"+"lower case: "+s.toLowerCase());
+
+        document.write("<hr>"+"start with fun: "+ s.startsWith("pan"));//if given string start with  "pan", then return true .. othewise return false
+
+        //if given string end with  "ge", then return true .. othewise return false
+
+        document.write("<hr>"+"end with fun : "+ s.endsWith("ge"));
+
+        document.write("<hr>"+"search() functions , this fun return position of the given word :"+s.search("mali"));
+
+        document.write("<hr>"+"match() this fun return the array of the same given word : "+s.match("pan"));
+
+        document.write("<hr>"+"indexof() return index: "+s.indexOf("col"));
+
+        document.write("<hr>"+"lastIndexof() return index as last to first : "+s.lastIndexOf("col"));
+
+        document.write("<hr>"+"replace fun: "+ s.replace("panskura","puk"));
+
+       document.write("<hr>"+s.replace(/a/g,"_"));
+       document.write("<hr>"+"trim() fun remove white spaces starting and endin: "+s.trim());
+       document.write("<hr>"+"split() fun : "+s.split(" "));
+       document.write("<hr>"+"repeat() fun: "+ s.repeat(3));
+       document.write("<hr>"+"tostring() fun return string:"+ f.toString() );
+       document.write("<hr>"+""+ s.valueOf());
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+       document.write("<hr>"+"");
+      
+    </script>
+</body>
+</html>

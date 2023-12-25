@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+
+
+           /* function r(number,string)//function with paramiters
+            {
+                alert("this is function");
+                confirm(string);
+                
+                document.write("the input value is x="+number);
+            }
+            r(90,"sombhu");
+
+            function rn(n,f){
+                var name=n+" "+f;
+                return name;
+                
+            }
+
+            var your_name=rn("sombhu","das");
+            document.write(your_name);
+           var pow=new Function("n","r","return Math.pow(n,r)");
+            document.writeln(pow(2,4)); */
+           
+            //Arrow function 
+            //any arrow function don't creating this context.
+            //function used as a variable , "variable name " is a default value of the name argument
+             let fun = function( name ="variable type"){
+                console.log(`this is ${name} function `);
+             }
+
+             //calling this function 
+
+             fun("other type");//pass the name value 
+
+            // function passing as a paramitter in the function 
+            //arrow function
+            //if one statment are return , then we write this f'unction without {} and return . 
+            let strCase= (str, fun)=> fun(str)
+            
+            let upper= str => {return str.toUpperCase();}
+
+            let lower = str => {return str.toLowerCase();}
+
+           let store= strCase("sombhu", upper);
+           console.log(store)
+
+
+          //high order function
+
+          //function wich contain other function to do some work .
+        
+          //callback function 
+
+          let sum= (a,b) => a+b; //one line arrow function
+
+          let oparetion =(sum)=>{
+                return sum(8,9)
+          }
+
+          console.log(oparetion(sum))//call function with function paramiter .
+
+        //  function retuurning function .
+         function outer_function(name){
+
+            function inner_function(msg)
+            {
+                console.log(name +" : "+msg)
+            }
+            return inner_function;
+
+         }
+          //first we set the outer function  value in the outer variable. 
+         let outer = outer_function("sombhu das");
+        
+         //then at last outer vabiable use as a function and call inner_function with paramiter.
+         let inner = outer("your photo is very nice ...");
+
+         
+         //IIFE function  ---> immediately invoked function expression .
+           // this function use to without any name .
+           //this function automaticaly called.
+         (function(str){
+               console.log(str)
+         })("this is a iife function.");
+
+
+         //settimeout function --> run after given time .
+
+         setTimeout(function(dilay){console.log("this is timeout fun : " + dilay)}, // first paramitar is a function
+                    3000,//second paramiter is a dilay , 1000 --> 1s
+                    " dilay 3000", //this is function paramiter .
+                    );
+        
+                    
+        //setInterval function   --> infitly run ,  given dilay               
+       
+       /* let string_print=(str) =>{
+
+            console.log(str)
+
+         }
+
+
+
+        setInterval(
+            string_print,
+            3000,
+            "sombhu",
+
+        );  */
+         
+
+        
+        </script>
+    </body>
+</html>
