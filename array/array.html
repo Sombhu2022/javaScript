@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <hr>
+    <script>
+        let arr=[30,90,65,34,23,"uiiritj","iofigjr","90950kf"] // array define, and initializetion 
+       // document.write(arr)
+
+        //new array creation with new keyword ...
+        let arry= new Array(5)
+           arry=[30,78,67,90,43]
+
+        //array travarsal ...
+        // input data in the array with prompt function.
+
+    /* for(var i=0;i<3;i++){
+            arry[i]=prompt("enter array value , index of ",i);
+        }  
+
+
+       for(let value in arry){
+           console.log("this is the array value :---------" + arry.values())
+        
+       } */
+
+
+      //array output
+
+      /*
+        for(var i=0;i<3;i++)
+        {
+        document.writeln(arry[i]);
+        }
+        */
+
+
+
+        //delete proparty use to delete of the array element 
+
+       /* delete arr[5]; 
+         document.write(arr) */
+
+        //slice() function use to create sub array of the given array element.
+       
+       /* var b=arr.slice(2,6);
+        document.write(" this is array sliice :---->  " + b); */
+         
+        
+
+      //array length finding using length propartice.. 
+
+      /*  document.write(arr.length) */
+       
+      //splice() function use to add new element in the array given specific position
+     // '1' --> is the position , where we wand to add new element
+     //'3' --> is a number element whouse data we want to delete ..
+     // at last 'som' and 'raj' are value , thats we wand to add in an array. 
+      
+    /* arr.splice(1,3,"som","raj");
+        document.write("this is splice function----->     "+arr+"<br>");  */
+
+       
+        // concat() function use to concadination of two arrays.
+        
+       /* var x=arr.concat(arry);
+        document.write("this is concat value :----> "+ x); */
+
+        //join('<joining_symbol>') use to join of the all array element...
+
+      /*  var y=arry.join("_")
+        document.write("<hr> this is joining of the array element with '_' :---->"+y+"<br>") */
+        
+        //sort() fun use to sorting of the array element. 
+
+       /* document.write(arry.sort()+"<br><br>"); */
+
+
+       //reverse() fun use to reverse of the array 
+      
+        document.write(arry.reverse()+"<br><br>");
+    
+
+        //pop() fun delete to last value of the array
+        arry.pop()
+
+        document.write(arr+"<hr>");
+        arr.push("ram","goutam")
+        document.write(arr+"<hr>");
+        document.getElementById("demo").innerHTML=arry.toString();
+      document.write(arr.copyWithin(2,3,5 +"<hr>"));
+      document.write(arr.indexOf(30))
+      document.write(arr.values(2))
+      var array_chack=Array.isArray(arr);
+      document.write(array_chack)
+      document.write(arr.indexOf("som",3)+"<h5>indexof</h5>");
+      document.write(arr.lastIndexOf("som")+"<h5>lastIndexof</h5>");
+      
+      document.write(arr.includes("raj")+"<h5>includes</h5>");
+      document.write("<hr>"+Array.from("sombhu"+ "dsa panskura banamali college"));
+
+
+    var  a_object=[
+      {
+        name:"sombhu",
+       age:20
+      },
+      {
+        name:"subhajit",
+        age:20
+      },
+      {
+        name:"koushik",
+        age:21
+      },
+      {name:"dip",age:21}
+    ];
+    for(var a=0;a<a_object.length;a++)
+    {
+    document.write("<hr>"+a_object[a].name+"  "+a_object[a].age);
+    }
+    var a_obj=["som","raj","krishna"]
+
+    a_obj.forEach(function(value,index)
+    {
+        document.write(index+":"+value);
+    });
+    for(var x of a_obj){
+       x=a_obj+"<br>";
+    }
+    document.write("     =>"+x);
+
+   
+
+    var z=a_object.map(fn);
+     function fn(k){
+        return k.name+" "+k.age;
+
+     }
+     document.write("<hr>"+"map function :  "+ z)
+
+    </script>
+</body>
+</html>

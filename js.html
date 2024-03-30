@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}" type="image/x-icon" />
+  <link rel="manifest" href="{% static 'icons/manifest.json' %}">
+</head>
+<body>
+    <div class="whatsapp" style="border:solid 2px red;">
+        <b onclick="whatsapp()" class="send_data" style="margin-left: 50%; margin-top:30%; font-size:30px; transform:translateX(-50%);">🤖</b>
+    </div>
+
+    <script>
+        function whatsapp(){
+// Define the image URL
+var imageUrl = "https://example.com/image.jpg";
+
+// Define the WhatsApp message
+var message = "Check out this image: " + imageUrl;
+
+// Construct the WhatsApp URL
+var whatsappUrl = "whatsapp://send?text=" + encodeURIComponent(message);
+
+// Create an anchor element with the WhatsApp URL
+var whatsappLink = document.createElement("a");
+whatsappLink.href = whatsappUrl;
+
+// Open the WhatsApp share dialog
+whatsappLink.click();}
+    </script>
+</body>
+</html>

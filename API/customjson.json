@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "sombhu das",
+    "sub": "bca",
+    "age": 21
+  },
+  {
+    "id": 2,
+    "name": "s das",
+    "sub": "bca",
+    "age": 23
+  },
+  {
+    "id": 3,
+    "name": "som das",
+    "sub": "msc",
+    "age": 25
+  },
+  {
+    "id": 4,
+    "name": "sonali jana",
+    "sub": "bca",
+    "age": 28
+  },
+  {
+    "id": 5,
+    "name": "rimbhu jana",
+    "sub": "bca",
+    "age": 20
+  },
+  {
+    "id": 6,
+    "name": "somdip jana",
+    "sub": "bca",
+    "age": 28
+  },
+  {
+    "id": 7,
+    "name": "dip khatua",
+    "sub": "bca",
+    "age": 23
+  },
+  {
+    "id": 8,
+    "name": "rakes khan",
+    "sub": "bsc",
+    "age": 27
+  },
+  {
+    "id": 9,
+    "name": "anil sen",
+    "sub": "ma",
+    "age": 26
+  },
+  {
+    "id": 10,
+    "name": "rajes khanna",
+    "sub": "mca",
+    "age": 21
+  }
+]
